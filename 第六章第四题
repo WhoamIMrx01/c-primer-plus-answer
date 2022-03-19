@@ -1,0 +1,16 @@
+#include<stdio.h>
+int main()
+{
+	int num = 6;
+	int i, j;
+	int cnt = 0;   //关键的一步！！！！
+	for (i = 0; i < num; i++) {
+		
+		for (j = 0; j <= i; j++) {
+			printf("%c", 'A'+cnt);
+			cnt++;
+		}
+		printf("\n");
+	}
+  return 0;
+  }
