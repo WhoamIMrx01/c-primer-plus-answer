@@ -1,0 +1,23 @@
+#include <stdio.h>
+//#include <math.h>
+int main()
+{
+	printf("请输入这个字母排的位置，我将以此打印他前面的所有字母\n");
+	int num;
+	char letter;
+	scanf_s("%d", &num);
+	letter = ("%c", 'A' + num - 1);
+	//printf("%c", letter);
+	int i, j;
+	for (i = 0; i < num;i++) {
+		int cnt = 0;
+		for (j=0;j<=i;j++)
+		{
+			cnt++;
+			printf("%c",'A'+num-cnt);
+		}
+			printf("\n");
+	}
+	
+	return 0;
+}
